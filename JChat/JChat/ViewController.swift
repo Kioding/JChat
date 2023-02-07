@@ -41,6 +41,24 @@ class ViewController: UIViewController {
         titleLabel.numberOfLines = 0
         
         titleLabel.attributedText = attributedText
+        
+        orLabel.text = "Or"
+        orLabel.font = UIFont.boldSystemFont(ofSize: 16)
+        orLabel.textColor = UIColor(white: 0, alpha: 0.45)
+        orLabel.textAlignment = .center
+        
+        let attributedTermsText = NSMutableAttributedString(string: """
+            By clicking "Create a new account" you agree to our
+            """, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14),
+                NSAttributedString.Key.foregroundColor : UIColor(white: 0, alpha: 0.65),
+                ])
+        let attributedSubTermsText = NSMutableAttributedString(string: "Terms of Service.", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 14),
+                NSAttributedString.Key.foregroundColor : UIColor(white: 0, alpha: 0.65),
+                ])
+        attributedTermsText.append(attributedSubTermsText)
+        
+        termsOfServiceLabel.attributedText = attributedTermsText
+        termsOfServiceLabel.numberOfLines = 0
     }
 }
 
