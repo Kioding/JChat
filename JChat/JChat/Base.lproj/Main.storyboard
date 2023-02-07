@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -70,11 +71,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="yzh-X7-vmt">
+                                <rect key="frame" x="80" y="254" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="aDy-cY-tmq"/>
+                                    <constraint firstAttribute="height" constant="30" id="tMP-rG-cZ2"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="aBv-sb-h9y">
+                                <rect key="frame" x="80" y="329" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="JHd-Wf-bEF"/>
+                                    <constraint firstAttribute="height" constant="30" id="Ywx-rN-cXj"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="OW4-eM-32R" firstAttribute="top" secondItem="iaI-bf-eMb" secondAttribute="bottom" constant="25" id="4jS-3d-I6A"/>
+                            <constraint firstItem="yzh-X7-vmt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="7Gs-zj-rAe"/>
                             <constraint firstItem="uET-GF-60R" firstAttribute="top" secondItem="3vi-dZ-2OJ" secondAttribute="bottom" constant="40" id="9YW-wP-BC2"/>
                             <constraint firstItem="cA7-2w-j3J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BBw-I5-ERS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cA7-2w-j3J" secondAttribute="trailing" constant="20" id="FII-nh-jqY"/>
@@ -84,13 +100,16 @@
                             <constraint firstItem="Y2A-sB-gUe" firstAttribute="top" secondItem="uET-GF-60R" secondAttribute="bottom" constant="25" id="LOl-nl-J61"/>
                             <constraint firstItem="Y2A-sB-gUe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="M4R-vo-dgo"/>
                             <constraint firstItem="OW4-eM-32R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="MKy-yT-DH2"/>
+                            <constraint firstItem="aBv-sb-h9y" firstAttribute="centerX" secondItem="yzh-X7-vmt" secondAttribute="centerX" id="Pvh-z0-jXD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iaI-bf-eMb" secondAttribute="trailing" id="Rgg-7W-d3r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uET-GF-60R" secondAttribute="trailing" constant="20" id="Yh6-1r-mgw"/>
                             <constraint firstItem="uET-GF-60R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZfJ-8V-GI7"/>
                             <constraint firstItem="iaI-bf-eMb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bZm-Ea-Y3I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3vi-dZ-2OJ" secondAttribute="trailing" constant="20" id="dve-bX-y1d"/>
+                            <constraint firstItem="aBv-sb-h9y" firstAttribute="centerY" secondItem="Y2A-sB-gUe" secondAttribute="centerY" id="fE9-5P-E6M"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OW4-eM-32R" secondAttribute="trailing" constant="20" id="gSl-45-FXf"/>
                             <constraint firstItem="3vi-dZ-2OJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="imV-fz-rvp"/>
+                            <constraint firstItem="yzh-X7-vmt" firstAttribute="centerY" secondItem="uET-GF-60R" secondAttribute="centerY" id="lEY-as-C37"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y2A-sB-gUe" secondAttribute="trailing" constant="20" id="yjJ-rU-zQB"/>
                         </constraints>
                     </view>
@@ -105,10 +124,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+            <point key="canvasLocation" x="28" y="83.497536945812811"/>
         </scene>
     </scenes>
     <resources>
+        <image name="facebook" width="1333.3333740234375" height="833.33331298828125"/>
+        <image name="google" width="121.33333587646484" height="121.33333587646484"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
